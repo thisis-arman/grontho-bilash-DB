@@ -6,10 +6,10 @@ import Image from "next/image";
 
 const heroImages = [
     { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'Books 01 ' },
-    { imgUrl: '/assets/images/book-02.jpg', alt: 'bag' },
-    { imgUrl: '/assets/images/book-01.jpg', alt: 'lamp' },
-    { imgUrl: '/assets/images/book-02.jpg', alt: 'air fryer' },
-    { imgUrl: '/assets/images/book-01.jpg', alt: 'chair' },
+    { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'bag' },
+    { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'lamp' },
+    { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'air fryer' },
+    { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'chair' },
 ]
 
 const HeroCarousel = () => {
@@ -17,9 +17,9 @@ const HeroCarousel = () => {
         <div className="hero-carousel">
             <Carousel
                 showThumbs={false}
-                // autoPlay
+                autoPlay
                 infiniteLoop
-                // interval={2000}
+                interval={4000}
                 showArrows={false}
                 showStatus={false}
             >
