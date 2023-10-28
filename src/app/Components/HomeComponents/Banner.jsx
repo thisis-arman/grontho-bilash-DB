@@ -22,14 +22,33 @@ const Banner = () => {
 
                             <h1 className="head-text">
                                 Unleash the Power of
-                                <span className="text-red-600 "> PriceWise</span>
+                                <span className="text-red-600 "> Grontho Bilash</span>
                             </h1>
 
                             <p className="mt-6">
                                 Powerful, self-serve product and growth analytics to help you convert, engage, and retain more.
                             </p>
 
-                            <input type="text" className='px-12 py-2 rounded-md border' />
+                            <form
+                                className="flex flex-wrap gap-4 mt-12"
+                            // onSubmit={handleSubmit}
+                            >
+                                <input
+                                    type="text"
+                                    /*  value={searchPrompt}
+                                     onChange={(e) => setSearchPrompt(e.target.value)} */
+                                    placeholder="Search Books here..."
+                                    className="flex-1 min-w-[200px] w-full p-3 border border-gray-300 rounded-lg  text-base text-gray-500 focus:outline-none;"
+                                />
+
+                                <button
+                                    type="submit"
+                                    className="bg-gray-900 border border-gray-900 rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;"
+                                // disabled={searchPrompt === ''}
+                                >
+                                    Search
+                                </button>
+                            </form>
                         </div>
 
                         <HeroCarousel />

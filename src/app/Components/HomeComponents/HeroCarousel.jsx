@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
 
 const heroImages = [
-    { imgUrl: '/assets/images/book-01.jpg', alt: 'Books 01 ' },
+    { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'Books 01 ' },
     { imgUrl: '/assets/images/book-02.jpg', alt: 'bag' },
     { imgUrl: '/assets/images/book-01.jpg', alt: 'lamp' },
     { imgUrl: '/assets/images/book-02.jpg', alt: 'air fryer' },
