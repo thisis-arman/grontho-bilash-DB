@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
 
 const heroImages = [
-    { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'Books 01 ' },
+    { imgUrl: 'https://i.ibb.co/g61zTFJ/37192.png', alt: 'Books 01 ' },
     { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'bag' },
     { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'lamp' },
     { imgUrl: 'https://i.ibb.co/Gxb8Xp8/4060996-1161.jpg', alt: 'air fryer' },
@@ -14,7 +14,7 @@ const heroImages = [
 
 const HeroCarousel = () => {
     return (
-        <div className="hero-carousel">
+        <div className="hero-carousel max-h-[530px]">
             <Carousel
                 showThumbs={false}
                 autoPlay
@@ -29,7 +29,7 @@ const HeroCarousel = () => {
                         alt={image.alt}
                         width={484}
                         height={484}
-                        className="object-contain"
+                        className="object-contain max-h-96 p-4"
                         key={image.alt}
                     />
                 ))}

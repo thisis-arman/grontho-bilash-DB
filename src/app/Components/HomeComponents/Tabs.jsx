@@ -7,7 +7,7 @@ function classNames(...classes) {
 }
 
 export default function Tabs() {
-    // const [jeweleries, setJewelery] = useState([])
+
 
     let [categories] = useState({
         Jewelery: [
@@ -177,6 +177,7 @@ export default function Tabs() {
     })
 
 
+    console.log({ categories })
 
     return (
         <div className="container mx-auto px-2 py-16 sm:px-0">
@@ -212,8 +213,8 @@ export default function Tabs() {
                         >
                             <ul className=' grid md:grid-cols-3 gap-8 '>
                                 {posts.map((post) =>
-                                    <a key={post.id} href="#" className="group relative block overflow-hidden">
-                                        <button
+                                    <a key={post.id} href="#" className="group max-height[460] relative block overflow-hidden" >
+                                        <button button
                                             className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
                                         >
                                             <span className="sr-only">Wishlist</span>
@@ -264,7 +265,7 @@ export default function Tabs() {
                         </Tab.Panel>
                     ))}
                 </Tab.Panels>
-            </Tab.Group>
-        </div>
+            </Tab.Group >
+        </div >
     )
 }
